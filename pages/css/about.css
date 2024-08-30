@@ -30,6 +30,7 @@
     margin: 0;
 }
 
+
 .content-about .btn-1 {
     background-color: transparent;
     padding: 10px;
@@ -39,6 +40,12 @@
     border-radius: 10px;
     font-size: 18px;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.content-about .btn-1:hover {
+    background-color: #06b4a6;
+    color: #ffffff;
 }
 
 @media(max-width:992px) {
