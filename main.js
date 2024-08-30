@@ -13,22 +13,22 @@ window.addEventListener('scroll', handleScroll);
 
 document.addEventListener("DOMContentLoaded", function () {
     const data = [{
-        img: './assets/blog/b1.jpg',
+        img: '../assets/blog/b1.jpg',
         title: 'The National Minimum Wage Is An Important Part',
         desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque at numquam, asperiores aut praesentium facilis ratione! Voluptatibus neque dignissimos ipsa atque veniam sint omnis in blanditiis, nemo fugit animi assumenda.',
         date: 'july 28, 2023'
     }, {
-        img: './assets/blog/b2.jpg',
+        img: '../assets/blog/b2.jpg',
         title: 'The National Minimum Wage Is An Important Part',
         desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque at numquam, asperiores aut praesentium facilis ratione! Voluptatibus neque dignissimos ipsa atque veniam sint omnis in blanditiis, nemo fugit animi assumenda.',
         date: 'july 28, 2023'
     }, {
-        img: './assets/blog/b3.jpg',
+        img: '../assets/blog/b3.jpg',
         title: 'The National Minimum Wage Is An Important Part',
         desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque at numquam, asperiores aut praesentium facilis ratione! Voluptatibus neque dignissimos ipsa atque veniam sint omnis in blanditiis, nemo fugit animi assumenda.',
         date: 'july 28, 2023'
     }, {
-        img: './assets/blog/b5.jpg',
+        img: '../assets/blog/b5.jpg',
         title: 'The National Minimum Wage Is An Important Part',
         desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque at numquam, asperiores aut praesentium facilis ratione! Voluptatibus neque dignissimos ipsa atque veniam sint omnis in blanditiis, nemo fugit animi assumenda.',
         date: 'july 28, 2023'

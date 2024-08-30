@@ -424,56 +424,6 @@ nav {
 }
 
 /* ============================= */
-.contact {
-    margin-top: 100px;
-}
-
-.form-contact {
-    width: 100%;
-    margin: 30px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* border: 1px solid #06b4a6; */
-    padding: 20px;
-    gap: 30px;
-}
-
-.form-contact input {
-    width: 90%;
-    padding: 10px 10px;
-    border-radius: 5px;
-    border: 1px solid #868686;
-}
-
-.form-contact textarea {
-    width: 100%;
-    margin: auto;
-    border-radius: 5px;
-    border: 1px solid #868686;
-    padding: 10px;
-}
-
-.form-contact input::placeholder,
-.form-contact textarea::placeholder {
-    font-size: 16px;
-}
-
-.form-contact input:focus,
-.form-contact textarea:focus {
-    outline: none;
-    border: 1px solid #06b4a6;
-}
-
-.form-contact button {
-    color: #ffffff;
-    background-color: #06b4a6;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: none;
-    font-size: 18px;
-    cursor: pointer;
-}
 
 
 /* ============================= */
@@ -496,6 +446,10 @@ nav {
     background-color: #F8F8F8;
     box-shadow: 0 2px 5px rgba(139, 139, 139, 0.7);
     border-radius: 10px;
+}
+
+.card-blogs {
+    margin-bottom: 20px;
 }
 
 .card-blog-content .header-card {
@@ -539,6 +493,7 @@ nav {
 }
 
 
+
 /* ================================ */
 
 footer {
@@ -562,6 +517,10 @@ footer .social-media a {
     font-size: 24px;
 }
 
+.footer-1 .logo {
+    margin: auto 0 !important;
+}
+
 .gap {
     gap: 15px;
 }
@@ -575,6 +534,11 @@ footer .social-media a {
 .info-person span {
     color: #06b4a6;
     margin-right: 5px;
+}
+
+.links {
+    width: 100%;
+    justify-content: center;
 }
 
 .links li a {
@@ -674,17 +638,27 @@ footer .social-media a {
         width: 70%;
     }
 
+    .card-blog {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-blog .card-blog-conten {
+        width: 100%;
+    }
+
     .form-contact {
         padding: 0;
     }
 
     .footer-1 {
         flex-direction: column;
+        gap: 20px;
     }
 
-    footer .logo {
+    .footer-1 .logo {
         text-align: center;
-        /* margin: 20px 0 !important; */
+        margin-top: 30px !important;
     }
 
     footer .nav-items {

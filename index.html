@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./pages/css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <title>DenTist</title>
 </head>
 
@@ -26,11 +28,11 @@
             <nav class="flex item-center">
                 <ul class="nav-items flex between">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="./pages/about.html">About</a></li>
                     <li><a href="./pages/services.html">Services</a></li>
                     <li><a href="./pages/appointment.html">Appointments</a></li>
-                    <li><a href="#blogs">Blogs</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="./pages/blog.html">Blogs</a></li>
+                    <li><a href="./pages/contact.html">Contact</a></li>
                 </ul>
                 <div class="menu-icon"><i class="fa-solid fa-sliders"></i></div>
 
@@ -43,11 +45,11 @@
                 </a>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="./pages/about.html">About</a></li>
                     <li><a href="./pages/services.html">Services</a></li>
                     <li><a href="./pages/appointment.html">Appointments</a></li>
-                    <li><a href="#blogs">Blogs</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="./pages/blog.html">Blogs</a></li>
+                    <li><a href="./pages/contact.html">Contact</a></li>
                 </ul>
             </div>
 
@@ -58,7 +60,7 @@
                 <h1>Welcome to Your Dental Home !</h1>
                 <p>We're here to help you achieve the smile of your dreams.</p>
 
-                <a href="#appointment">Book An Appointment <i class="fa-solid fa-arrow-right-long"></i></a>
+                <a href="./pages/appointment.html">Book An Appointment <i class="fa-solid fa-arrow-right-long"></i></a>
 
             </div>
             <div class="overlay"></div>
@@ -166,37 +168,66 @@
     <section class="blog countainer" id="blogs">
         <div class="title-section">
             <h1>
-                Blogs</h1>
+                Latest Blog</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sequi adipisci fugiat atque unde
+                inventore!</p>
             <div class="hr"></div>
         </div>
-        <swiper-container class="mySwiper swiper-cards" init="false">
-            <div class="card-blogs"></div>
-        </swiper-container>
-        <div class="blogs-arrows">
-            <div class="swiper-button-prev"><i class="fa-solid fa-arrow-left icon-arrow"></i></div>
-            <div class="swiper-button-next"><i class="fa-solid fa-arrow-right icon-arrow"></i></div>
+
+        <div class="card-blog flex" style="gap: 40px;">
+            <div class="card-blog-content">
+                <div class='header-card'>
+                    <img src="./assets/blog/b5.jpg" alt="">
+                </div>
+                <div class='body-card'>
+                    <h3>The National Minimum Wage Is An Important Part</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque at numquam, asperiores aut
+                        praesentium facilis ratione! Voluptatibus neque dignissimos ipsa atque veniam sint omnis in
+                        blanditiis, nemo fugit animi assumenda.</p>
+                    <div class='flex item-center between '>
+                        <p><i class="fa-solid fa-user-tie"></i> By Admin</p>
+                        <p><i class="fa-solid fa-calendar-days"></i>july 28, 2023</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-blog-content">
+                <div class='header-card'>
+                    <img src="./assets/blog/b6.jpg" alt="">
+                </div>
+                <div class='body-card'>
+                    <h3>The National Minimum Wage Is An Important Part</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque at numquam, asperiores aut
+                        praesentium facilis ratione! Voluptatibus neque dignissimos ipsa atque veniam sint omnis in
+                        blanditiis, nemo fugit animi assumenda.</p>
+                    <div class='flex item-center between '>
+                        <p><i class="fa-solid fa-user-tie"></i> By Admin</p>
+                        <p><i class="fa-solid fa-calendar-days"></i>july 28, 2023</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact">
         <div class="title-section">
             <h1>
                 Contact Me</h1>
             <div class="hr"></div>
-            <form class="form-contact">
-                <div class="flex between" style="width: 100%; gap: 20px;">
-                    <input type="text" placeholder="Name*" required>
-                    <input type="email" placeholder="Email*" required>
-                </div>
-                <div class="flex" style="width: 100%; gap: 20px;">
-                    <input type="text" placeholder="Supject*" required>
-                    <input type="text" placeholder="Mobile Number*" required>
-                </div>
-                <textarea placeholder="Message*" rows="10"></textarea>
-
-                <button> Send Message</button>
-            </form>
         </div>
+        <form class="form-contact" style="margin: auto;">
+            <div class="flex between" style="width: 100%; gap: 20px;">
+                <input type="text" placeholder="Name*" required>
+                <input type="email" placeholder="Email*" required>
+            </div>
+            <div class="flex" style="width: 100%; gap: 20px;">
+                <input type="text" placeholder="Supject*" required>
+                <input type="text" placeholder="Mobile Number*" required>
+            </div>
+            <textarea placeholder="Message*" rows="10"></textarea>
+
+            <button> Send Message</button>
+        </form>
     </section>
 
 
@@ -209,16 +240,16 @@
             </a>
             <div class="flex column item-center">
                 <h2>Quick Links</h2>
-                <ul class="links nav-items flex between">
+                <ul class="links nav-items flex">
                     <div class="flex column gap">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="./pages/about.html">About</a></li>
                         <li><a href="./pages/services.html">Services</a></li>
                     </div>
                     <div class="flex column gap">
                         <li><a href="./pages/appointment.html">Appointments</a></li>
-                        <li><a href="#blogs">Blogs</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="./pages/blog.html">Blogs</a></li>
+                        <li><a href="./pages/blog.html">Contact</a></li>
                     </div>
                 </ul>
             </div>
@@ -251,14 +282,6 @@
     <script src="./main.js"> </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-
-    <script>
-        function toggleNav() {
-            const sidebar = document.getElementsByClassName('.nav-items');
-            sidebar.classList.toggle('active');
-        }
-    </script>
-
 </body>
 
 </html>

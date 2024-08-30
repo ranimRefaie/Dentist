@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="./css/appointment.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <link rel="stylesheet" href="../style.css">
     <title>Document</title>
 </head>
 
@@ -26,10 +26,10 @@
 
             <nav class="flex item-center">
                 <ul class="nav-items flex between">
-                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="/index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="./services.html">Services</a></li>
-                    <li><a href="appointment.html">Appointments</a></li>
+                    <li><a href="/pages/services.html">Services</a></li>
+                    <li><a href="/pages/appointment.html">Appointments</a></li>
                     <li><a href="#blogs">Blogs</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -43,10 +43,10 @@
                     <h1>Den<span><i class="fa-solid fa-tooth"></i></span>Tist</h1>
                 </a>
                 <ul>
-                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="/index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="./services.html">Services</a></li>
-                    <li><a href="appointment.html">Appointments</a></li>
+                    <li><a href="/pages/services.html">Services</a></li>
+                    <li><a href="/pages/appointment.html">Appointments</a></li>
                     <li><a href="#blogs">Blogs</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -58,55 +58,16 @@
 
             <div class="overlay"></div>
         </div>
-
-        <div class="card-times">
-            <div class="card-times-countainer">
-                <div class="title-card">
-                    <h3><span><i class="fa-regular fa-clock"></i></span>Opening Hours</h3>
-                </div>
-
-                <div class="time flex">
-                    <p>Monday - Friday</p>
-                    <p>10.00 - 16.00</p>
-                </div>
-                <div class="time flex">
-                    <p>Saturday</p>
-                    <p>9.00 - 20.00</p>
-                </div>
-                <div class="time flex">
-                    <p>Sunday</p>
-                    <p>9.30 - 18.00</p>
-                </div>
-            </div>
-        </div>
     </header>
 
-    <section class="appointment" id="appointment">
-        <div class="overlay"></div>
-        <div class="countainer-appointment">
-            <form class=" flex">
-                <div class="title-section">
-                    <h1>
-                        Make an Appointment</h1>
-                    <div class="hr"></div>
-                    <p>We don’t want you to think what is the best for you. We know what it is and will make everything
-                        to
-                        help.
-                    </p>
-                </div>
-                <div class="flex">
-                    <input type="text" placeholder="Enter Full Name">
-                    <input type="number" placeholder="Enter Mobile Number">
-                </div>
-                <div class="flex">
-                    <input type="date">
-                    <input type="time">
-                </div>
 
-                <div class="countainer-btn">
-                    <a href=""><i class="fa-regular fa-calendar-check"></i> Make Appointmen</a>
-                </div>
-            </form>
+    <section class="blog countainer" id="blogs">
+        <swiper-container class="mySwiper swiper-cards" init="false">
+            <div class="card-blogs"></div>
+        </swiper-container>
+        <div class="blogs-arrows">
+            <div class="swiper-button-prev"><i class="fa-solid fa-arrow-left icon-arrow"></i></div>
+            <div class="swiper-button-next"><i class="fa-solid fa-arrow-right icon-arrow"></i></div>
         </div>
     </section>
 
@@ -119,12 +80,12 @@
                 <h2>Quick Links</h2>
                 <ul class="links nav-items flex">
                     <div class="flex column gap">
-                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="/index.html">Home</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="/pages/services.html">Services</a></li>
                     </div>
                     <div class="flex column gap">
-                        <li><a href="./appointment.html">Appointments</a></li>
+                        <li><a href="/pages/appointment.html">Appointments</a></li>
                         <li><a href="#blogs">Blogs</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </div>
@@ -153,8 +114,10 @@
             <p>2024 © All Rights Reserved | Designed and Developed by Ranim Alrefaie</p>
         </div>
     </footer>
+    <script src="../main.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
-    <script src="../main.js"></script>
 </body>
 
 </html>
