@@ -276,6 +276,15 @@ footer .social-media a {
     font-size: 24px;
 }
 
+footer .social-media a {
+    transition: transform 0.3s ease;
+}
+
+footer .social-media a:hover {
+    transform: translateY(-5px);
+
+}
+
 .footer-1 .logo {
     margin: auto 0 !important;
 }
