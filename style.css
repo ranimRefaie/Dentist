@@ -542,7 +542,7 @@ nav {
 /* ================================ */
 
 footer {
-    /* padding: 20px 7.5%; */
+    margin-top: 100px;
     background-color: rgba(194, 202, 202, 0.7);
 }
 
