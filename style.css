@@ -672,7 +672,7 @@ footer .social-media a {
         padding: 0;
     }
 
-    footer {
+    .footer-1 {
         flex-direction: column;
     }
 
@@ -683,4 +683,8 @@ footer .social-media a {
     footer .nav-items {
         display: flex;
     }
+
+    /* .footer-2 p {
+        width: 90%;
+    } */
 }
