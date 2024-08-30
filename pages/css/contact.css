@@ -10,8 +10,7 @@
         align-items: center;
         gap: 30px;
         background-color: #ffffff;
-        padding: 20px;
-        box-shadow: 0 2px 3px rgba(139, 139, 139, 0.3);
+        padding: 30px 20px;
         border-radius: 10px;
     }
 
@@ -20,6 +19,7 @@
         padding: 10px 10px;
         border-radius: 5px;
         border: 1px solid #86868633;
+        background-color: #e6e0e024;
     }
 
     textarea {
@@ -28,6 +28,7 @@
         border-radius: 5px;
         border: 1px solid #86868633;
         padding: 10px;
+        background-color: #e6e0e024;
     }
 
     input::placeholder,
@@ -51,9 +52,28 @@
         font-size: 18px;
         cursor: pointer;
     }
+}
 
-    .information {
+.hero-contact {
+    background-image: url('../../assets/bg-2.jpg') !important;
+    margin-bottom: 150px;
+}
+
+.information {
+    width: 100%;
+    position: absolute;
+    z-index: 11;
+    justify-content: center;
+    top: 85%;
+
+
+    .information-contain {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         gap: 20px;
+        margin: auto;
     }
 
     .group-info {
@@ -63,6 +83,7 @@
         border-radius: 10px;
         box-shadow: 0 2px 3px rgba(139, 139, 139, 0.3);
         gap: 10px;
+        width: 30%;
     }
 
     span {
@@ -88,6 +109,48 @@
     }
 }
 
-.hero-contact {
-    background-image: url('../../assets/bg-2.jpg') !important;
+
+@media(max-width:992px) {
+    .contact {
+        width: 100%;
+
+        .form-contact {
+            width: 90%;
+        }
+    }
+}
+
+@media(max-width:735px) {
+    .information {
+        .information-contain {
+            width: 90%;
+        }
+    }
+}
+
+@media(max-width:735px) {
+    .information {
+        top: 30%;
+
+        .information-contain {
+            flex-direction: column;
+        }
+
+        .group-info {
+            width: 90%;
+            padding: 20px;
+        }
+    }
+}
+
+@media(max-width:560px) {
+    .form-contact div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-contact div input {
+        width: 90%;
+        padding: 15px;
+    }
 }

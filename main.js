@@ -62,9 +62,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     <div class='body-card'>
                         <h3>${item.title}</h3>
                         <p>${item.desc}</p>
-                        <div class='flex item-center between '>
-                        <p><i class="fa-solid fa-user-tie"></i> By Admin</p>
-                            <p><i class="fa-solid fa-calendar-days"></i> ${item.date}</p>
+                        <div class='footer-card flex item-center between'>
+                        <p> <span><i class="fa-solid fa-user-tie"></i></span> By Admin</p>
+                            <p><span><i class="fa-solid fa-calendar-days"></i></span>${item.date}</p>
                         </div>
                     </div>
                 </div>`;
@@ -116,8 +116,9 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <h3>${item.title}</h3>
                                 <p>${item.desc}</p>
                             </div>
-                            <div>
-                                <p><i class="fa-solid fa-calendar-days"></i> ${item.date}</p>
+                            <div class='footer-card flex item-center between'>
+                            <p> <span><i class="fa-solid fa-user-tie"></i></span> By Admin</p>
+                            <p><span><i class="fa-solid fa-calendar-days"></i></span>${item.date}</p>
                             </div>
                         </div>`;
 
