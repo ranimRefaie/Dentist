@@ -41,39 +41,47 @@ li {
 }
 
 .top-nav {
-    padding: 10px 7.5%;
-    background-color: #06b4a6;
-    color: #ffffff;
+    padding: 5px 7.5%;
+    background-color: #ffffff;
+    color: #151518;
+    border-bottom: 2px solid #06b4a6;
 }
 
-.top-nav .social-media,
 .top-nav .info {
     gap: 20px;
     font-size: 16px;
-
 }
 
-.top-nav .social-media a {
-    color: #ffffff;
+.top-nav .info span {
+    color: #06b4a6;
 }
 
 nav {
     position: relative;
     padding: 0 7.5%;
     background-color: #ffffff;
+    justify-content: center;
 }
 
 .navbar.scrolled {
     width: 100%;
     position: fixed;
     z-index: 222;
-
 }
 
 .navbar.scrolled nav {
-    background: rgba(209, 221, 220, 0.5);
+    /* background: rgba(209, 221, 220, 0.5); */
     backdrop-filter: blur(10px);
     transition-duration: 300ms;
+    background-color: #06b4a6;
+}
+
+.navbar.scrolled nav .nav-items li a {
+    color: #ffffff;
+}
+
+.navbar.scrolled nav .menu-icon {
+    color: #ffffff;
 }
 
 .nav-items {
@@ -92,12 +100,14 @@ nav {
 .logo h1 {
     color: #151518;
     font-weight: 400;
+    margin: 0;
 }
 
 .logo span {
     color: #06b4a6;
     font-size: 30px;
 }
+
 .menu-icon {
     display: none;
 }
@@ -127,9 +137,11 @@ nav {
     padding: 0;
     margin: 0;
 }
-.sidebar ul a{
+
+.sidebar ul a {
     color: #151518;
 }
+
 .overlay-nav {
     position: fixed;
     top: 0;
@@ -442,10 +454,12 @@ nav {
     border: 1px solid #868686;
     padding: 10px;
 }
+
 .form-contact input::placeholder,
-.form-contact textarea::placeholder{
-font-size: 16px;
+.form-contact textarea::placeholder {
+    font-size: 16px;
 }
+
 .form-contact input:focus,
 .form-contact textarea:focus {
     outline: none;
@@ -563,27 +577,37 @@ footer .social-media a {
     color: #06b4a6;
     margin-right: 5px;
 }
-.links li a{
+
+.links li a {
     transition: 0.4s ease;
 }
-.links li a:hover{
+
+.links li a:hover {
     color: #06b4a6;
 }
 
-.footer-2{
+.footer-2 {
     background-color: #06b4a6;
     text-align: center;
     padding: 10px 0;
     margin-top: 40px;
 }
-.footer-2 p{
+
+.footer-2 p {
     margin: 0;
     padding: 0;
     color: #ffffff;
 }
+
 @media(max-width:992px) {
     .menu-icon {
         display: block;
+        color: #06b4a6;
+    }
+
+    nav {
+        justify-content: flex-end;
+        padding: 20px 0;
     }
 
     .nav-items {
@@ -592,6 +616,10 @@ footer .social-media a {
 
     .top-nav {
         flex-direction: column;
+    }
+
+    .top-nav .logo {
+        display: none;
     }
 
     .title-section {
@@ -639,9 +667,11 @@ footer .social-media a {
     .appointment form {
         width: 70%;
     }
-.form-contact{
-    padding: 0;
-}
+
+    .form-contact {
+        padding: 0;
+    }
+
     footer {
         flex-direction: column;
     }

@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
         date: 'july 28, 2023'
     },]
     const getSlidesPerView = () => {
-        return window.innerWidth < 912 ? 1 : 2; // كرت واحد للشاشات الصغيرة وكرتين للشاشات الكبيرة
+        return window.innerWidth < 912 ? 1 : 2;
     };
 
     const slidesPerView = getSlidesPerView();
@@ -62,9 +62,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     <div class='body-card'>
                         <h3>${item.title}</h3>
                         <p>${item.desc}</p>
-                    </div>
-                    <div>
-                        <p><i class="fa-solid fa-calendar-days"></i> ${item.date}</p>
+                        <div class='flex item-center between '>
+                        <p><i class="fa-solid fa-user-tie"></i> By Admin</p>
+                            <p><i class="fa-solid fa-calendar-days"></i> ${item.date}</p>
+                        </div>
                     </div>
                 </div>`;
 
@@ -88,12 +89,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     swiperEl.initialize();
 
-    // إعادة تعيين الشرائح عند تغيير حجم النافذة
     window.addEventListener('resize', () => {
         const newSlidesPerView = getSlidesPerView();
         if (newSlidesPerView !== slidesPerView) {
-            // إعادة تهيئة الشرائح إذا تغير عدد الشرائح
-            swiperEl.removeAllSlides(); // إزالة جميع الشرائح الحالية
+            swiperEl.removeAllSlides();
             for (let i = 0; i < Math.ceil(data.length / newSlidesPerView); i++) {
                 const slide = document.createElement("swiper-slide");
                 slide.classList.add("swiper-slide");
@@ -127,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 document.querySelector(".mySwiper").appendChild(slide);
             }
-            swiperEl.update(); // تحديث السلايدر
+            swiperEl.update();
         }
     });
 });
@@ -139,11 +138,11 @@ const sidebar = document.getElementById('sidebar');
 const overlay = document.querySelector('#overlay');
 
 menuIcon.addEventListener('click', () => {
-    sidebar.style.left = '0'; 
+    sidebar.style.left = '0';
     overlay.style.display = 'block';
 });
 
 overlay.addEventListener('click', () => {
-    sidebar.style.left = '-250px'; 
+    sidebar.style.left = '-250px';
     overlay.style.display = 'none';
 });
