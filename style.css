@@ -338,14 +338,15 @@ footer .social-media a:hover {
         font-size: 24px;
     }
 
+    .navbar.scrolled .menu-icon {
+        color: #ffffff;
+    }
+
     nav {
         justify-content: flex-end;
         padding: 20px 7.5%;
     }
 
-    .navbar.scrolled nav {
-        background: rgba(209, 221, 220, 0.5);
-    }
 
     .nav-items {
         display: none;
